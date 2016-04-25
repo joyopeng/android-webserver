@@ -1,0 +1,68 @@
+ <!-- login panel -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_panel"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="60dp"
+    android:layout_weight="1.7" >
+
+    <LinearLayout
+        android:id="@+id/login_account_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/account_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="账户:" />
+
+        <EditText
+            android:id="@+id/account_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:hint="手机号码"
+            android:singleLine="true"
+            android:textColorHint="#AAAAAA" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/login_chmsg_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_account_panel"
+        android:layout_marginLeft="30dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/checkmsg_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="验证码:" />
+
+        <EditText
+            android:id="@+id/checkmsg_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:singleLine="true"
+            android:textColorHint="#AAAAAA" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_chmsg_panel"
+        android:layout_marginLeft="110dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="确定提交" />
+
+</RelativeLayout>
